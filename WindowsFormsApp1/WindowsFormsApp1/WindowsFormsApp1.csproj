@@ -61,6 +61,8 @@
       <DependentUpon>Form2.cs</DependentUpon>
       <Link>Form2.Designer.cs</Link>
     </Compile>
+    <Compile Include="Classes\Donor.cs" />
+    <Compile Include="Classes\korisnik.cs" />
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
