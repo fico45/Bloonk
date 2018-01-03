@@ -10,5 +10,6 @@ namespace WindowsFormsApp1.Classes
     {
         Krvna_grupa krvna_grupa;
         float postotak;
+		int test;
     }
 }

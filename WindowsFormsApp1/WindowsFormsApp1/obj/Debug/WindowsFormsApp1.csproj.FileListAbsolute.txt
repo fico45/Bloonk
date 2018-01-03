@@ -26,3 +26,16 @@ E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form4.resou
 E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form1.resources
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form2.resources
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form3.resources
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form4.resources
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
