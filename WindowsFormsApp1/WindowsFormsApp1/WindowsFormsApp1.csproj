@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="Classes\Donor.cs" />
     <Compile Include="Classes\korisnik.cs" />
+    <Compile Include="Classes\Statistika.cs" />
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
