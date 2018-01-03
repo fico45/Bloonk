@@ -15,24 +15,24 @@ namespace WindowsFormsApp1.Classes
         string grad;
         int br_mobitela;
         DateTime datum;
-        Krvna_grupa krvna_grupa;
-        Spol spol;
+        //Krvna_grupa krvna_grupa;
+        //Spol spol;
     }
 
-    enum Krvna_grupa
-    {
-        0-
-        0+
-        A-
-        A+
-        B-
-        B+
-        AB-
-        AB+
-        }
-    enum Spol
-    {
-        musko
-        zensko
-    }
+    //enum krvna_grupa
+    //{
+    //    0-;
+    //    0+;
+    //    a-;
+    //    a+;
+    //    b-;
+    //    b+;
+    //    ab-;
+    //    ab+;
+    //    }
+    //enum spol
+    //{
+    //    musko;
+    //    zensko;
+    //}
 }

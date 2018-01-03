@@ -8,7 +8,7 @@ namespace WindowsFormsApp1.Classes
 {
     class Statistika
     {
-        Krvna_grupa krvna_grupa;
+        //Krvna_grupa krvna_grupa;
         float postotak;
     }
 }

@@ -16,3 +16,13 @@ C:\Users\Fico45\Source\Repos\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\
 E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
 E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form1.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form2.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form3.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form4.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
