@@ -39,3 +39,5 @@ C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp
 C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources

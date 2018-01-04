@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace Bloonk
 {
 	public partial class Form2 : Form
@@ -26,9 +26,23 @@ namespace Bloonk
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			Form3 f3 = new Form3();
-			this.Hide();
-			f3.ShowDialog();
+	
+		}
+		
+
+		private void Form2_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox2_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
