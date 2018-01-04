@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace Bloonk
 {
 	public partial class Form5 : Form
 	{
@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Form3 f3 = new Form4();
+			Form3 f3 = new Form3();
 			this.Hide();
 			f3.ShowDialog();
 		}

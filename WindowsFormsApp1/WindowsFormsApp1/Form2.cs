@@ -26,7 +26,9 @@ namespace Bloonk
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-	
+            Form3 f3 = new Form3();
+            this.Hide();
+            f3.ShowDialog();
 		}
 		
 

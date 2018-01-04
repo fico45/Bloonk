@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace Bloonk
 {
 	partial class Form5
 	{

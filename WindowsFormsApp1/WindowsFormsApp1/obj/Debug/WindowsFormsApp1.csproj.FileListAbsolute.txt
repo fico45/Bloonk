@@ -41,3 +41,7 @@ C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp
 C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
 C:\Users\Matea\Desktop\Banka krvi\Bloonk_glavni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form5.resources
+E:\Project\Bloonk\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Bloonk.Form6.resources
