@@ -37,7 +37,7 @@
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(12, 23);
+			this.pictureBox2.Location = new System.Drawing.Point(12, 12);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(94, 73);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -60,10 +60,11 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Info;
+			this.BackColor = System.Drawing.Color.PapayaWhip;
 			this.ClientSize = new System.Drawing.Size(590, 427);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.pictureBox2);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form6";
 			this.Text = "Provijest donacija";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -38,5 +38,17 @@ namespace Bloonk
 		{
 
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			Form7 f7 = new Form7();
+			this.Hide();
+			f7.ShowDialog();
+		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
