@@ -51,6 +51,7 @@
 			// 
 			// pictureBox1
 			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(102, 163);
 			this.pictureBox1.Name = "pictureBox1";
@@ -61,6 +62,7 @@
 			// 
 			// pictureBox2
 			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
 			this.pictureBox2.Location = new System.Drawing.Point(12, 12);
 			this.pictureBox2.Name = "pictureBox2";
@@ -75,6 +77,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.PapayaWhip;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(592, 440);
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox1);

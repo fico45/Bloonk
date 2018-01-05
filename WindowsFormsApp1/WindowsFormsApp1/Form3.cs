@@ -49,5 +49,10 @@ namespace Bloonk
             this.Hide();
             f6.ShowDialog();
         }
-    }
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

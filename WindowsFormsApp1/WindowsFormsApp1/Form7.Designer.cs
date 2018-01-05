@@ -230,6 +230,7 @@
 			// 
 			// pictureBox2
 			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
 			this.pictureBox2.Location = new System.Drawing.Point(12, 12);
 			this.pictureBox2.Name = "pictureBox2";
@@ -237,12 +238,14 @@
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox2.TabIndex = 38;
 			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
 			// 
 			// Form7
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.PapayaWhip;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(695, 526);
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.button2);
