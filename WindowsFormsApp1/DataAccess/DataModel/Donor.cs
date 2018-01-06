@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1.Classes
+namespace Bloonk.DataAccess.DataModel
 {
-    class Donor
+    public class Donor
     {
         string ime;
         string prezime;

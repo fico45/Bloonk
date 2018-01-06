@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bloonk.DataAccess;
+using Bloonk.DataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,11 @@ namespace Bloonk
 {
 	public partial class Form1 : Form
 	{
+        //Donor test;
 		public Form1()
 		{
 			InitializeComponent();
+            //test = DALfactory.DonorData.Get(null);
 		}
 
 		private void pictureBox2_Click(object sender, EventArgs e)

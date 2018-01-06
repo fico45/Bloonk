@@ -167,5 +167,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\Blonk.DataAccess.csproj">
+      <Project>{590c61bf-9ab7-41cb-bade-f7677d67af2c}</Project>
+      <Name>Blonk.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
