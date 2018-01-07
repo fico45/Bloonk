@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Text;
+using System.Linq;
 using Bloonk.DataAccess.DataModel;
 
 namespace Bloonk.DataAccess.Repository
@@ -15,11 +17,25 @@ namespace Bloonk.DataAccess.Repository
 
         public override Donor Get(string code)
         {
-            var connection = SqlHelper.Instance.Connection;
-            if (connection.State == ConnectionState.Closed)
-                connection.Open();
-            connection.Close();
-            connection.Dispose();
+            using (var conn = SqlHelper.Instance.Connection)
+            {
+                using (var cmd = new SqlCommand("get_donor", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@oib", code);
+                    conn.Open();
+                    cmd.Connection = conn;
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        var table = new DataTable();
+                        table.Load(reader);
+                        if (table.Rows != null && table.Rows.Count > 0)
+                            return Parse(table.Rows[0]);
+                    }
+                }
+            }
+
             return null;
         }
 
@@ -35,7 +51,21 @@ namespace Bloonk.DataAccess.Repository
 
         protected override Donor Parse(DataRow DbRow)
         {
-            throw new NotImplementedException();
+            return new Donor
+            {
+                Ime = DbRow.Field<string>("ime"),
+                Prezime = DbRow.Field<string>("prezime"),
+                Oib = DbRow.Field<string>("oib"),
+                Datum_rodenja = DbRow.Field<DateTime>("datum_rodenja"),
+                Grad = DbRow.Field<string>("grad"),
+                Br_mobitela = DbRow.Field<string>("br_mobitela"),
+                Datum = DbRow.Field<DateTime>("datum"),
+                Id = DbRow.Field<int>("Id"),
+                SpolDonor = Donor.MapirajSpol(DbRow.Field<int>("spol")),
+                KrvnaGrupa = Donor.MapirajKrvnuGrupu(DbRow.Field<string>("krvna_grupa"))
+            };
+
         }
     }
 }
+

@@ -18,24 +18,19 @@ namespace Bloonk
 		public Form1()
 		{
 			InitializeComponent();
-            //test = DALfactory.DonorData.Get(null);
-		}
+           // test = DALfactory.DonorData.Get("00000000001");
+        }
 
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
-		}
+        }
 
-		private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
 		{
 			Form2 f2 = new Form2();
 			this.Hide();
 			f2.ShowDialog();
-		}
-
-		private void Form1_Load(object sender, EventArgs e)
-		{
-
 		}
 	}
 }
