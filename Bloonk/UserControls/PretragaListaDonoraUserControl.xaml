@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Bloonk.GUI.UserControls.PretragaListaDonoraUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Bloonk.GUI.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="OIB:" Width="Auto" />
+            <TextBox Margin="7,0,0,0" Grid.Column="1" MaxLength="11" x:Name="OibTextBox" />
+            <StackPanel Grid.Column="2"
+                        Margin="7,0,0,0"
+                        Orientation="Horizontal">
+                <Button Content="Traži po OIBu" Click="Search"/>
+                
+            </StackPanel>
+        </Grid>
+
+        <DataGrid Grid.Row="1"
+                  x:Name="DonoriGrid"
+                  SelectedItem="{Binding DonorSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  IsSynchronizedWithCurrentItem="True"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserReorderColumns="False"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="IME" Binding="{Binding Ime}" IsReadOnly="True" />
+                <DataGridTextColumn Header="PREZIME"
+                                    Binding="{Binding Prezime}"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Header="SPOL"
+                                    Binding="{Binding Spol.Naziv}"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Header="OIB"
+                                    Binding="{Binding Oib}"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Header="MJESTO STANOVANJA"
+                                    Binding="{Binding Mjesto.Naziv}"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Header="KONTAKT BROJ"
+                                    Binding="{Binding KontaktBroj}"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Header="KRVNA GRUPA"
+                                    Binding="{Binding KrvaGrupa.Naziv}"
+                                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,114 @@
+﻿<UserControl x:Class="Bloonk.GUI.UserControls.DonorUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Bloonk.GUI.UserControls"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock"
+               BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="7">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="85" />
+                <ColumnDefinition  Width="250" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Ime:" />
+            <TextBox Text="{Binding DonorSelected.Ime, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnValidationError=True}" Grid.Column="1" />
+
+            <TextBlock Text="Prezime:"
+                       Grid.Row="1" />
+            <TextBox Text="{Binding DonorSelected.Prezime, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnValidationError=True}"
+                      Grid.Column="1"
+                      Grid.Row="1" />
+
+            <TextBlock Text="OIB:"
+                       Grid.Row="2" />
+
+            <TextBox Text="{Binding DonorSelected.Oib, Mode=TwoWay, UpdateSourceTrigger=LostFocus, NotifyOnValidationError=True}"
+                      Grid.Column="1"
+                     Grid.Row="2"
+                     MaxLength="11" />
+
+            <TextBlock Text="Datum rođenja:"
+                       Grid.Row="3" />
+
+            <DatePicker SelectedDate="{Binding DonorSelected.RodjenDatum, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}"
+                        Grid.Row="3"
+                        Grid.Column="1" />
+
+            <TextBlock Text="Spol:"
+                       Grid.Row="4" />
+
+            <ComboBox ItemsSource="{Binding Spolovi}"
+                      SelectedItem="{Binding DonorSelected.Spol, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}"
+                      DisplayMemberPath="Naziv"
+                      Grid.Column="1"
+                      Grid.Row="4" />
+
+            <TextBlock Text="Krvna grupa:"
+                       Grid.Row="5" />
+            <ComboBox ItemsSource="{Binding KrvneGrupe}"
+                      SelectedItem="{Binding DonorSelected.KrvaGrupa, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}"
+                      DisplayMemberPath="Naziv"
+                      Grid.Column="1"
+                      Grid.Row="5" />
+
+            <TextBlock Text="Grad:"
+                       Grid.Row="6" />
+
+            <ComboBox ItemsSource="{Binding Gradovi}"
+                      SelectedItem="{Binding DonorSelected.Mjesto, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}"
+                      DisplayMemberPath="Naziv"
+                      Grid.Column="1"
+                      Grid.Row="6" />
+
+            <TextBlock Text="Kontakt broj:"
+                       Grid.Row="7" />
+            <TextBox Grid.Column="1"
+                     Text="{Binding DonorSelected.KontaktBroj, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}"
+                     Grid.Row="7" />
+
+            <TextBlock Text="Aktivan donor:"
+                       Grid.Column="0"
+                       Grid.Row="8" />
+            <StackPanel Grid.Column="1"
+                        Grid.Row="8"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                <RadioButton Content="Da"
+                             IsChecked="{Binding DonorSelected.AktivanDonor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <RadioButton Content="Ne"
+                              />
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button Content="Spremi promjene"
+                    HorizontalAlignment="Right"
+                    Click="SpremiPromjene" />
+            <Button Content="Obriši iz baze donora"
+                    Click="Obrisi"
+                    HorizontalAlignment="Right"
+                    Margin="10,0,10,0" />
+        </StackPanel>
+    </StackPanel>
+    
+</UserControl>

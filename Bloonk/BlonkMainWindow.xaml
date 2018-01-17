@@ -1,0 +1,75 @@
+﻿<Window x:Class="Bloonk.BlonkMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bloonk"
+        xmlns:Controls="clr-namespace:Bloonk.GUI.UserControls"
+        xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        xmlns:winforms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        mc:Ignorable="d">
+    <TabControl>
+        <TabItem Header="Pretraga liste donora">
+            <Controls:PretragaListaDonoraUserControl />
+        </TabItem>
+        <TabItem Header="Administracija donora">
+            <Controls:DonorUserControl />
+        </TabItem>
+        <TabItem Header="Novi Donor">
+            <Controls:NoviDonorUserControl />
+        </TabItem>
+        <TabItem Header="Statistika">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                    <TextBlock Text="STATISTIKA PO KRVNIM GRUPAMA"
+                               FontSize="17" />
+
+                    <WindowsFormsHost Height="Auto"  Grid.Column="0">
+                        
+                        <winformchart:Chart x:Name="Statistikakrvi" Dock="Fill">
+                            <winformchart:Chart.Series>
+                                <winformchart:Series Name="series"
+                                                     ChartType="Pie"
+                                                     Color="LightBlue" />
+                            </winformchart:Chart.Series>
+                            <winformchart:Chart.ChartAreas>
+                                <winformchart:ChartArea />
+                            </winformchart:Chart.ChartAreas>
+                        </winformchart:Chart>
+
+
+                    </WindowsFormsHost>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1"
+                            VerticalAlignment="Stretch"
+                            HorizontalAlignment="Center"
+                            Margin="10,0"
+                            Width="357">
+                    <WindowsFormsHost Margin="20,0,0,0"
+                                      Grid.Column="1">
+                        <winformchart:Chart x:Name="StatistikakrviGrad"
+                                            Dock="Fill">
+                            <winformchart:Chart.Series>
+                                <winformchart:Series Name="series1"
+                                                     ChartType="Area" />
+                            </winformchart:Chart.Series>
+                            <winformchart:Chart.ChartAreas>
+                                <winformchart:ChartArea />
+                            </winformchart:Chart.ChartAreas>
+                        </winformchart:Chart>
+
+                    </WindowsFormsHost>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

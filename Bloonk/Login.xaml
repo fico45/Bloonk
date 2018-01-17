@@ -1,0 +1,18 @@
+﻿<Window x:Class="Bloonk.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bloonk"
+        xmlns:Controls="clr-namespace:Bloonk.GUI.UserControls"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        Title="Prijava u sustav"
+        MinHeight="150" MinWidth="300"
+        MaxHeight="150"
+        MaxWidth="300">
+    <Grid>
+        <Controls:LoginUserControl x:Name="LoginData" />
+    </Grid>
+</Window>
