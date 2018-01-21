@@ -24,35 +24,46 @@ namespace Bloonk.GUI.UserControls
                 var donor = window.DonorSelected;
                 if (donor != null)
                 {
-                    if (string.IsNullOrEmpty(donor.Ime)) MessageBox.Show("Ime je obavezan podatak;");
-                    if (string.IsNullOrEmpty(donor.Prezime)) MessageBox.Show("Prezime je obavezan podatak;");
-                    if (string.IsNullOrEmpty(donor.Oib)) MessageBox.Show("Oib je obavezan podatak;");
-                    if (string.IsNullOrEmpty(donor.KontaktBroj)) MessageBox.Show("Kontakt broj je obavezan podatak;");
-                    if (donor.KrvaGrupa.ID == 0) MessageBox.Show("Krvna grupa je obavezan podatak");
-                    if (donor.Mjesto.ID == 0) MessageBox.Show("Mjesto stanovanja je obavezan podatak");
-                    if (donor.Spol.ID == 0) MessageBox.Show("Spol je obavezan podatak");
-                    if (donor.RodjenDatum == null) MessageBox.Show("Datum rođenja je obavezan podatak");
+                    if (string.IsNullOrEmpty(donor.Ime)) { MessageBox.Show("Ime je obavezan podatak;"); return; }
+                    if (string.IsNullOrEmpty(donor.Prezime)) { MessageBox.Show("Prezime je obavezan podatak;"); return; }
+                    if (string.IsNullOrEmpty(donor.Oib)) { MessageBox.Show("Oib je obavezan podatak;"); return; }
+                    if (string.IsNullOrEmpty(donor.KontaktBroj)) { MessageBox.Show("Kontakt broj je obavezan podatak;"); return; }
+                    if (donor.KrvaGrupa.ID == 0) { MessageBox.Show("Krvna grupa je obavezan podatak"); return; }
+                    if (donor.Mjesto.ID == 0) { MessageBox.Show("Mjesto stanovanja je obavezan podatak"); return; }
+                    if (donor.Spol.ID == 0) { MessageBox.Show("Spol je obavezan podatak"); return; }
+                    if (donor.RodjenDatum == null) { MessageBox.Show("Datum rođenja je obavezan podatak"); return; }
 
-
-                    if (DalFactory.DonorData.UpdateSave(donor))
+                    var odgovor = MessageBox.Show("Jeste li sigurni da želite spremiti promjene?", "Upozorenje", MessageBoxButton.YesNo);
+                    if (odgovor == MessageBoxResult.Yes)
                     {
-                        MessageBox.Show("Promjene su uspješno snimljene u bazu donora");
+                        if (DalFactory.DonorData.UpdateSave(donor))
+                        {
+                            MessageBox.Show("Promjene su uspješno snimljene u bazu donora");
+                        }
                     }
+                    
                 }
             }
         }
 
         private void Obrisi(object sender, RoutedEventArgs e)
         {
+
             var window = Window.GetWindow(this) as BlonkMainWindow;
             if (window != null)
             {
                 if (window.DonorSelected != null)
-                    if (DalFactory.DonorData.Delete(window.DonorSelected))
+                {
+                    var odgovor = MessageBox.Show("Jeste li sigurni da želite obrisati donora?", "Upozorenje", MessageBoxButton.YesNo);
+                    if (odgovor == MessageBoxResult.Yes)
                     {
-                        window.DonorSelected = new Donor();
-                        MessageBox.Show("Donor je uspješno obrisan iz baze podataka");
+                        if (DalFactory.DonorData.Delete(window.DonorSelected))
+                        {
+                            window.DonorSelected = new Donor();
+                            MessageBox.Show("Donor je uspješno obrisan iz baze podataka");
+                        }
                     }
+                }
             }
         }
     }

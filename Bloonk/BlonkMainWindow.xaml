@@ -8,6 +8,7 @@
         xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
         xmlns:winforms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Background="AliceBlue"
         mc:Ignorable="d">
     <TabControl>
         <TabItem Header="Pretraga liste donora">

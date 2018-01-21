@@ -6,6 +6,7 @@ using System.Text;
 using System.Linq;
 using Bloonk.DataAccess.DataModel;
 using System.Configuration;
+using System.Diagnostics;
 
 namespace Bloonk.DataAccess.Repository
 {
@@ -48,7 +49,7 @@ namespace Bloonk.DataAccess.Repository
                     using (var cmd = new SqlCommand("DONOR_UPDATE", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@Update", donor.Id > 0);
+                        cmd.Parameters.AddWithValue("@ID", donor.Id);
                         cmd.Parameters.AddWithValue("@Ime", donor.Ime);
                         cmd.Parameters.AddWithValue("@Prezime", donor.Prezime);
                         cmd.Parameters.AddWithValue("@Oib", donor.Oib);
@@ -65,8 +66,9 @@ namespace Bloonk.DataAccess.Repository
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Debug.WriteLine(ex);
                 return false;
             }
 
