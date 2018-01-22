@@ -56,5 +56,10 @@ namespace Bloonk.GUI.UserControls
             if (Donori.Count > 0 && !Donori.Contains(donor))
                 Donori.Remove(donor);
         }
+
+        private void DonoriGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -13,6 +13,6 @@
         MaxHeight="150"
         MaxWidth="300">
     <Grid>
-        <Controls:LoginUserControl x:Name="LoginData" />
+        <Controls:LoginUserControl x:Name="LoginData" Background="#FFFFEFEF" />
     </Grid>
 </Window>

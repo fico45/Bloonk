@@ -19,12 +19,12 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <TextBlock Text="OIB:" Width="Auto" />
-            <TextBox Margin="7,0,0,0" Grid.Column="1" MaxLength="11" x:Name="OibTextBox" />
+            <TextBox Margin="7,0,0,0" Grid.Column="1" MaxLength="11" x:Name="OibTextBox" Background="White" />
             <StackPanel Grid.Column="2"
                         Margin="7,0,0,0"
                         Orientation="Horizontal">
-                <Button Content="Traži po OIBu" Click="Search"/>
-                
+                <Button Content="Traži po OIBu" Click="Search" Background="#FFCFE9FF"/>
+
             </StackPanel>
         </Grid>
 
@@ -35,10 +35,11 @@
                   AutoGenerateColumns="False"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
-                  CanUserReorderColumns="False"
+                  CanUserReorderColumns="False" Background="#FFFFEFEF" SelectionChanged="DonoriGrid_SelectionChanged"
                   >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="IME" Binding="{Binding Ime}" IsReadOnly="True" />
+                <DataGridTextColumn Header="IME" Binding="{Binding Ime}" IsReadOnly="True">
+                </DataGridTextColumn>
                 <DataGridTextColumn Header="PREZIME"
                                     Binding="{Binding Prezime}"
                                     IsReadOnly="True" />
@@ -59,6 +60,6 @@
                                     IsReadOnly="True" />
             </DataGrid.Columns>
         </DataGrid>
-        
+
     </Grid>
 </UserControl>

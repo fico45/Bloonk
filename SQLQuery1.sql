@@ -1,0 +1,1 @@
+exec DONOR_UPDATE @Update=1,@Ime=N'a',@Prezime=N'43',@Oib=N'11651616516',@RodjenDatum='2018-01-25 00:00:00',@GradId=3,@Spol=10,@KrvaGrupa=3,@KontaktBroj=N'2342',@AktivanDonor=1
