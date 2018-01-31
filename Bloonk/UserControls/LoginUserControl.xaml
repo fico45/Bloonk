@@ -40,5 +40,15 @@
                     Click="OdustaniOdPrijave"
                     Margin="5,10,0,0" Background="#FFFF9797" />
         </StackPanel>
+        <Image Height="53" Source="/Bloonk;component/blood_drop.png" Stretch="Fill" Width="52" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </StackPanel>
 </UserControl>
